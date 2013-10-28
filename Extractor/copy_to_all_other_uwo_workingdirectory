@@ -1,0 +1,9 @@
+scp query_bing_id_labels.txt mpi@192.168.0.1:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_id_labels.txt mpi@192.168.0.11:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_id_labels.txt mpi@192.168.0.12:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_id_svm.txt mpi@192.168.0.1:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_id_svm.txt mpi@192.168.0.11:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_id_svm.txt mpi@192.168.0.12:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_hierarchy.txt mpi@192.168.0.1:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_hierarchy.txt mpi@192.168.0.11:/home/mpi/uwo_query_bing_workingspace
+scp query_bing_hierarchy.txt mpi@192.168.0.12:/home/mpi/uwo_query_bing_workingspace

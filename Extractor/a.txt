@@ -1,0 +1,4 @@
+1|http://www.engin.umich.edu/~cre/asyLearn/bits/isoalgo/index.htm|/media/d/SEEUWO_Training_Data/Formal_sciences/Computer_sciences/Algorithms/0.xml
+2|http://www.image.ucar.edu/GSP/Software/Fields/Help/cover.design.html|/media/d/SEEUWO_Training_Data/Formal_sciences/Computer_sciences/Algorithms/0.xml
+3|http://teknologimalaysia.academia.edu/MuhammadSadiq/Papers/148398/Application_for_pinch_design_of_heat_exchanger_networks_by_use_of_computer_code_employing_an_improved_problem_algorithm_table|/media/d/SEEUWO_Training_Data/Formal_sciences/Computer_sciences/Algorithms/0.xml
+4|https://de.asia.umuc.edu/detrain/CLIC201/cmis102.html|/media/d/SEEUWO_Training_Data/Formal_sciences/Computer_sciences/Algorithms/0.xml

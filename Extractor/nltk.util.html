@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>nltk.util</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="nltk-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://nltk.org/">nltk 2.0.1rc1</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="nltk-module.html">Package&nbsp;nltk</a> ::
+        Module&nbsp;util
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="nltk.util-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module util</h1><p class="nomargin-top"><span class="codelink"><a href="nltk.util-pysrc.html">source&nbsp;code</a></span></p>
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Classes</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Classes"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.Index-class.html" class="summary-name">Index</a>
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.OrderedDict-class.html" class="summary-name">OrderedDict</a>
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.AbstractLazySequence-class.html" class="summary-name">AbstractLazySequence</a><br />
+      An abstract base class for read-only sequences whose values are 
+        computed as needed.
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.LazySubsequence-class.html" class="summary-name">LazySubsequence</a><br />
+      A subsequence produced by slicing a lazy sequence.
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.LazyConcatenation-class.html" class="summary-name">LazyConcatenation</a><br />
+      A lazy sequence formed by concatenating a list of lists.
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.LazyMap-class.html" class="summary-name">LazyMap</a><br />
+      A lazy sequence whose elements are formed by applying a given 
+        function to each element in one or more underlying lists.
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.LazyZip-class.html" class="summary-name">LazyZip</a><br />
+      A lazy sequence whose elements are tuples, each containing the i-th
+        element from each of the argument sequences.
+    </td>
+  </tr>
+<tr>
+    <td class="summary" colspan="2">
+        <a href="nltk.util.LazyEnumerate-class.html" class="summary-name">LazyEnumerate</a><br />
+      A lazy sequence whose elements are tuples, each ontaining a count 
+        (from zero) and a value yielded by underlying sequence.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="usage"></a><span class="summary-sig-name">usage</span>(<span class="summary-sig-arg">obj</span>,
+        <span class="summary-sig-arg">selfname</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">self</code><code class="variable-quote">'</code></span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#usage">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>boolean</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#in_idle" class="summary-sig-name">in_idle</a>()</span><br />
+      Returns:
+      true if this function is run within idle.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#in_idle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#pr" class="summary-sig-name">pr</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">start</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">end</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Pretty print a sequence of data items</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#pr">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#print_string" class="summary-sig-name">print_string</a>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">width</span>=<span class="summary-sig-default">70</span>)</span><br />
+      Pretty print a string, breaking lines on whitespace</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#print_string">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#tokenwrap" class="summary-sig-name">tokenwrap</a>(<span class="summary-sig-arg">tokens</span>,
+        <span class="summary-sig-arg">separator</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"> </code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">width</span>=<span class="summary-sig-default">70</span>)</span><br />
+      Pretty print a list of text tokens, breaking lines on whitespace</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#tokenwrap">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>string</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#re_show" class="summary-sig-name">re_show</a>(<span class="summary-sig-arg">regexp</span>,
+        <span class="summary-sig-arg">string</span>,
+        <span class="summary-sig-arg">left</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">{</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">right</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">}</code><code class="variable-quote">'</code></span>)</span><br />
+      Search <code>string</code> for substrings matching 
+      <code>regexp</code> and wrap the matches with braces.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#re_show">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="filestring"></a><span class="summary-sig-name">filestring</span>(<span class="summary-sig-arg">f</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#filestring">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#breadth_first" class="summary-sig-name">breadth_first</a>(<span class="summary-sig-arg">tree</span>,
+        <span class="summary-sig-arg">children</span>=<span class="summary-sig-default">&lt;built-in function iter&gt;</span>,
+        <span class="summary-sig-arg">depth</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">queue</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Traverse the nodes of a tree in breadth-first order.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#breadth_first">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#guess_encoding" class="summary-sig-name">guess_encoding</a>(<span class="summary-sig-arg">data</span>)</span><br />
+      Given a byte string, attempt to decode it.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#guess_encoding">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="invert_dict"></a><span class="summary-sig-name">invert_dict</span>(<span class="summary-sig-arg">d</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#invert_dict">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>dict</code> of <code>set</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#transitive_closure" class="summary-sig-name">transitive_closure</a>(<span class="summary-sig-arg">graph</span>,
+        <span class="summary-sig-arg">reflexive</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Calculate the transitive closure of a directed graph, optionally the 
+      reflexive transitive closure.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#transitive_closure">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>dict</code> of <code>set</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#invert_graph" class="summary-sig-name">invert_graph</a>(<span class="summary-sig-arg">graph</span>)</span><br />
+      Inverts a directed graph.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#invert_graph">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>string</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#clean_html" class="summary-sig-name">clean_html</a>(<span class="summary-sig-arg">html</span>)</span><br />
+      Remove HTML markup from the given string.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#clean_html">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="clean_url"></a><span class="summary-sig-name">clean_url</span>(<span class="summary-sig-arg">url</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#clean_url">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#flatten" class="summary-sig-name">flatten</a>(<span class="summary-sig-arg">*args</span>)</span><br />
+      Flatten a list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#flatten">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#ngrams" class="summary-sig-name">ngrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">pad_left</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">pad_right</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">pad_symbol</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A utility that produces a sequence of ngrams from a sequence of 
+      items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#ngrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#bigrams" class="summary-sig-name">bigrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      A utility that produces a sequence of bigrams from a sequence of 
+      items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#bigrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#trigrams" class="summary-sig-name">trigrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      A utility that produces a sequence of trigrams from a sequence of 
+      items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#trigrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>iterator</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#ingrams" class="summary-sig-name">ingrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">pad_left</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">pad_right</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">pad_symbol</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A utility that produces an iterator over ngrams generated from a 
+      sequence of items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#ingrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>iterator</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#ibigrams" class="summary-sig-name">ibigrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      A utility that produces an iterator over bigrams generated from a 
+      sequence of items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#ibigrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>iterator</code> of <code>tuple</code>s</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#itrigrams" class="summary-sig-name">itrigrams</a>(<span class="summary-sig-arg">sequence</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      A utility that produces an iterator over trigrams generated from a 
+      sequence of items.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#itrigrams">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#binary_search_file" class="summary-sig-name">binary_search_file</a>(<span class="summary-sig-arg">file</span>,
+        <span class="summary-sig-arg">key</span>,
+        <span class="summary-sig-arg">cache</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="summary-sig-arg">cacheDepth</span>=<span class="summary-sig-default">-1</span>)</span><br />
+      Searches through a sorted file using the binary search algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#binary_search_file">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nltk.util-module.html#set_proxy" class="summary-sig-name">set_proxy</a>(<span class="summary-sig-arg">proxy</span>,
+        <span class="summary-sig-arg">(user, password)</span>=<span class="summary-sig-default"><code class="variable-group">(</code>None<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code><code class="variable-group">)</code></span>)</span><br />
+      Set the HTTP proxy for Python to download through.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="nltk.util-pysrc.html#set_proxy">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="in_idle"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_idle</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#in_idle">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: <code>boolean</code></dt>
+        <dd>true if this function is run within idle.  Tkinter programs that 
+          are run in idle should never call <code>Tk.mainloop</code>; so 
+          this function should be used to gate all calls to 
+          <code>Tk.mainloop</code>.</dd>
+  </dl>
+<div class="fields">      <p><strong>Warning:</strong>
+        This function works by checking <code>sys.stdin</code>.  If the 
+        user has modified <code>sys.stdin</code>, then it may return 
+        incorrect results.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="pr"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pr</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">start</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">end</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#pr">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Pretty print a sequence of data items</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (<code>sequence</code> or <code>iterator</code>) - the data stream to print</li>
+        <li><strong class="pname"><code>start</code></strong> (<code>int</code>) - the start position</li>
+        <li><strong class="pname"><code>end</code></strong> (<code>int</code>) - the end position</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="print_string"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">print_string</span>(<span class="sig-arg">s</span>,
+        <span class="sig-arg">width</span>=<span class="sig-default">70</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#print_string">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Pretty print a string, breaking lines on whitespace</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>s</code></strong> (<code>string</code>) - the string to print, consisting of words and spaces</li>
+        <li><strong class="pname"><code>width</code></strong> (<code>int</code>) - the display width</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="tokenwrap"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">tokenwrap</span>(<span class="sig-arg">tokens</span>,
+        <span class="sig-arg">separator</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"> </code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">width</span>=<span class="sig-default">70</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#tokenwrap">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Pretty print a list of text tokens, breaking lines on whitespace</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tokens</code></strong> (<code>list</code>) - the tokens to print</li>
+        <li><strong class="pname"><code>separator</code></strong> (<code>str</code>) - the string to use to separate tokens</li>
+        <li><strong class="pname"><code>width</code></strong> (<code>int</code>) - the display width (default=70)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="re_show"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">re_show</span>(<span class="sig-arg">regexp</span>,
+        <span class="sig-arg">string</span>,
+        <span class="sig-arg">left</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">{</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">right</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">}</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#re_show">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Search <code>string</code> for substrings matching <code>regexp</code>
+  and wrap the matches with braces.  This is convenient for learning about 
+  regular expressions.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>regexp</code></strong> (<code>string</code>) - The regular expression.</li>
+        <li><strong class="pname"><code>string</code></strong> (<code>string</code>) - The string being matched.</li>
+        <li><strong class="pname"><code>left</code></strong> (<code>string</code>) - The left delimiter (printed before the matched substring)</li>
+        <li><strong class="pname"><code>right</code></strong> (<code>string</code>) - The right delimiter (printed after the matched substring)</li>
+    </ul></dd>
+    <dt>Returns: <code>string</code></dt>
+        <dd>A string with markers surrounding the matched substrings.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="breadth_first"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">breadth_first</span>(<span class="sig-arg">tree</span>,
+        <span class="sig-arg">children</span>=<span class="sig-default">&lt;built-in function iter&gt;</span>,
+        <span class="sig-arg">depth</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">queue</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#breadth_first">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Traverse the nodes of a tree in breadth-first order. (No need to check
+  for cycles.) The first argument should be the tree root; children should 
+  be a function taking as argument a tree node and returning an iterator of
+  the node's children.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="guess_encoding"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">guess_encoding</span>(<span class="sig-arg">data</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#guess_encoding">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Given a byte string, attempt to decode it. Tries the standard 'UTF8' 
+  and 'latin-1' encodings, Plus several gathered from locale 
+  information.</p>
+  <p>The calling program *must* first call:</p>
+<pre class="literalblock">
+   locale.setlocale(locale.LC_ALL, '')
+</pre>
+  <p>If successful it returns <code>(decoded_unicode, 
+  successful_encoding)</code>. If unsuccessful it raises a 
+  <code>UnicodeError</code>.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="transitive_closure"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">transitive_closure</span>(<span class="sig-arg">graph</span>,
+        <span class="sig-arg">reflexive</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#transitive_closure">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Calculate the transitive closure of a directed graph, optionally the 
+  reflexive transitive closure.</p>
+  <p>The algorithm is a slight modification of the &quot;Marking 
+  Algorithm&quot; of Ioannidis &amp; Ramakrishnan (1998) &quot;Efficient 
+  Transitive Closure Algorithms&quot;.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>graph</code></strong> (<code>dict</code> of <code>set</code>s) - the initial graph, represented as a dictionary of sets</li>
+        <li><strong class="pname"><code>reflexive</code></strong> (<code>bool</code>) - if set, also make the closure reflexive</li>
+    </ul></dd>
+    <dt>Returns: <code>dict</code> of <code>set</code>s</dt>
+        <dd>the (reflexive) transitive closure of the graph</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="invert_graph"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">invert_graph</span>(<span class="sig-arg">graph</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#invert_graph">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Inverts a directed graph.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>graph</code></strong> (<code>dict</code> of <code>set</code>s) - the graph, represented as a dictionary of sets</li>
+    </ul></dd>
+    <dt>Returns: <code>dict</code> of <code>set</code>s</dt>
+        <dd>the inverted graph</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clean_html"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clean_html</span>(<span class="sig-arg">html</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#clean_html">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove HTML markup from the given string.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>html</code></strong> (<code>string</code>) - the HTML string to be cleaned</li>
+    </ul></dd>
+    <dt>Returns: <code>string</code></dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="flatten"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">flatten</span>(<span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#flatten">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Flatten a list.</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>flatten(1, 2, [<span class="py-string">'b'</span>, <span class="py-string">'a'</span> , [<span class="py-string">'c'</span>, <span class="py-string">'d'</span>]], 3)
+<span class="py-output">[1, 2, 'a', 'b', 'c', 'd', 3]</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>*args</code></strong> - items and lists to be combined into a single list</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code></dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ngrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ngrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">n</span>,
+        <span class="sig-arg">pad_left</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">pad_right</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">pad_symbol</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#ngrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces a sequence of ngrams from a sequence of items.
+  For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ngrams([1,2,3,4,5], 3)
+<span class="py-output">[(1, 2, 3), (2, 3, 4), (3, 4, 5)]</span></pre>
+  <p>Use ingram for an iterator version of this function.  Set pad_left or 
+  pad_right to true in order to get additional ngrams:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>ngrams([1,2,3,4,5], 2, pad_right=True)
+<span class="py-output">[(1, 2), (2, 3), (3, 4), (4, 5), (5, None)]</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into ngrams</li>
+        <li><strong class="pname"><code>n</code></strong> (<code>int</code>) - the degree of the ngrams</li>
+        <li><strong class="pname"><code>pad_left</code></strong> (<code>boolean</code>) - whether the ngrams should be left-padded</li>
+        <li><strong class="pname"><code>pad_right</code></strong> (<code>boolean</code>) - whether the ngrams should be right-padded</li>
+        <li><strong class="pname"><code>pad_symbol</code></strong> (<code>any</code>) - the symbol to use for padding (default is None)</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of <code>tuple</code>s</dt>
+        <dd>The ngrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="bigrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bigrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#bigrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces a sequence of bigrams from a sequence of 
+  items. For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>bigrams([1,2,3,4,5])
+<span class="py-output">[(1, 2), (2, 3), (3, 4), (4, 5)]</span></pre>
+  <p>Use ibigrams for an iterator version of this function.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into bigrams</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of <code>tuple</code>s</dt>
+        <dd>The bigrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="trigrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">trigrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#trigrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces a sequence of trigrams from a sequence of 
+  items. For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>trigrams([1,2,3,4,5])
+<span class="py-output">[(1, 2, 3), (2, 3, 4), (3, 4, 5)]</span></pre>
+  <p>Use itrigrams for an iterator version of this function.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into trigrams</li>
+    </ul></dd>
+    <dt>Returns: <code>list</code> of <code>tuple</code>s</dt>
+        <dd>The trigrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ingrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ingrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">n</span>,
+        <span class="sig-arg">pad_left</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">pad_right</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">pad_symbol</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#ingrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces an iterator over ngrams generated from a 
+  sequence of items.</p>
+  <p>For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>list(ingrams([1,2,3,4,5], 3))
+<span class="py-output">[(1, 2, 3), (2, 3, 4), (3, 4, 5)]</span></pre>
+  <p>Use ngrams for a list version of this function.  Set pad_left or 
+  pad_right to true in order to get additional ngrams:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>list(ingrams([1,2,3,4,5], 2, pad_right=True))
+<span class="py-output">[(1, 2), (2, 3), (3, 4), (4, 5), (5, None)]</span></pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into ngrams</li>
+        <li><strong class="pname"><code>n</code></strong> (<code>int</code>) - the degree of the ngrams</li>
+        <li><strong class="pname"><code>pad_left</code></strong> (<code>boolean</code>) - whether the ngrams should be left-padded</li>
+        <li><strong class="pname"><code>pad_right</code></strong> (<code>boolean</code>) - whether the ngrams should be right-padded</li>
+        <li><strong class="pname"><code>pad_symbol</code></strong> (<code>any</code>) - the symbol to use for padding (default is None)</li>
+    </ul></dd>
+    <dt>Returns: <code>iterator</code> of <code>tuple</code>s</dt>
+        <dd>The ngrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ibigrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ibigrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#ibigrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces an iterator over bigrams generated from a 
+  sequence of items.</p>
+  <p>For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>list(ibigrams([1,2,3,4,5]))
+<span class="py-output">[(1, 2), (2, 3), (3, 4), (4, 5)]</span></pre>
+  <p>Use bigrams for a list version of this function.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into bigrams</li>
+    </ul></dd>
+    <dt>Returns: <code>iterator</code> of <code>tuple</code>s</dt>
+        <dd>The bigrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="itrigrams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">itrigrams</span>(<span class="sig-arg">sequence</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#itrigrams">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A utility that produces an iterator over trigrams generated from a 
+  sequence of items.</p>
+  <p>For example:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>list(itrigrams([1,2,3,4,5])
+<span class="py-output">[(1, 2, 3), (2, 3, 4), (3, 4, 5)]</span></pre>
+  <p>Use trigrams for a list version of this function.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sequence</code></strong> (<code>sequence</code> or <code>iterator</code>) - the source data to be converted into trigrams</li>
+    </ul></dd>
+    <dt>Returns: <code>iterator</code> of <code>tuple</code>s</dt>
+        <dd>The trigrams</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="binary_search_file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">binary_search_file</span>(<span class="sig-arg">file</span>,
+        <span class="sig-arg">key</span>,
+        <span class="sig-arg">cache</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="sig-arg">cacheDepth</span>=<span class="sig-default">-1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#binary_search_file">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Searches through a sorted file using the binary search algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>file</code></strong> (file) - the file to be searched through.</li>
+        <li><strong class="pname"><code>key</code></strong> ({string}) - the identifier we are searching for.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>The line from the file with first word key.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_proxy"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_proxy</span>(<span class="sig-arg">proxy</span>,
+        <span class="sig-arg">(user, password)</span>=<span class="sig-default"><code class="variable-group">(</code>None<code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code><code class="variable-group">)</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="nltk.util-pysrc.html#set_proxy">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the HTTP proxy for Python to download through.</p>
+  <p>If <code>proxy</code> is None then tries to set proxy from enviroment 
+  or system settings.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>proxy</code></strong> - The HTTP proxy server to use. For example: 
+          'http://proxy.example.com:3128/'</li>
+        <li><strong class="pname"><code>user</code></strong> - The username to authenticate with. Use <code>None</code> to 
+          disable authentication.</li>
+        <li><strong class="pname"><code>password</code></strong> - The password to authenticate with.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="nltk-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://nltk.org/">nltk 2.0.1rc1</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1
+    on Mon Apr 11 14:39:43 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
